@@ -27,6 +27,33 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 
 ## 💻 Program
 
+```
+class Beans:
+    def type(self):
+        print("Vegetable")
+    def color(self):
+        print("Green")
+
+class Mango:
+    def type(self):
+        print("Fruit")
+    def color(self):
+        print("Yellow")
+
+def func(obj):
+    obj.type()
+    obj.color()
+
+b = Beans()
+m = Mango()
+
+func(b)
+func(m)
+```
 ## Output
 
+<img width="516" height="335" alt="image" src="https://github.com/user-attachments/assets/84fe77f6-3767-4ce7-aeea-ff7010e6aef6" />
+
 ## Result
+
+Hence, the code is executed successfully, demonstrating **polymorphism** where the generic function `func()` can operate on objects of different classes (`Beans` and `Mango`) and call their respective methods.
