@@ -25,7 +25,27 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```
+class A:
+    def __init__(self, a):
+        self.a = a
 
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+
+ob1 = A(10)
+ob2 = A(20)
+
+print(ob1 < ob2)
+```
 ## Output
 
+<img width="542" height="432" alt="image" src="https://github.com/user-attachments/assets/981af531-3a28-4c77-a258-15f26f574059" />
+
+
 ## Result
+
+Hence, the code is executed successfully, and the `<` operator is **overloaded** to provide custom comparison behavior for objects of class `A`.
